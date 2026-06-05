@@ -1,0 +1,1 @@
+Upload the CONTENTS of this folder to the root of your GitHub repository. GitHub root must show admin, assets, data, index.html, cms.js, netlify.toml. Netlify: base directory empty, publish directory .
