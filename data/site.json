@@ -1,32 +1,63 @@
 {
+  "contact": {
+    "intro": "Vragen, inschrijvingen of gewoon eens langskomen? Neem gerust contact op!",
+    "address": "Gemeenschapscentrum Westmalle<br>Sint-Jozeflei 26<br>2390 Westmalle (Malle)",
+    "email": "info@keramiekwestmalle.be",
+    "repetitions": "Elke vrijdag · 19:30 tot 21:30",
+    "age": "12 tot 27 jaar"
+  },
+  "agendaIntro": "Aankomende evenementen, repetities en activiteiten van Jeugdkoor Keramiek.",
+  "fixedRepetition": "Elke <strong>vrijdag van 19:30 tot 21:30</strong> in het Cultureel Centrum van Westmalle (Sint-Jozeflei 26, 2390 Westmalle). Iedereen tussen 12 en 27 jaar is welkom om eens langs te komen proberen!",
+  "newsTitle": "Recentste nieuws",
+  "board": [
+    {
+      "initials": "LC",
+      "name": "Laurens Corluy",
+      "role": "Dirigent",
+      "bio": "Leidt Keramiek met passie en vakmanschap. Zorgt voor de muzikale richting en de cohesie van het koor."
+    },
+    {
+      "initials": "WV",
+      "name": "Wim Vanderstraeten",
+      "role": "Pianist",
+      "bio": "Begeleidt het koor aan de piano bij elke repetitie en elk optreden."
+    },
+    {
+      "initials": "V",
+      "name": "Naam voorzitter",
+      "role": "Voorzitter",
+      "bio": "Voorzit het bestuur en bewaakt de algemene werking van de vereniging."
+    }
+  ],
+  "boardIntro": "Maak kennis met de mensen die Jeugdkoor Keramiek draaiende houden.",
   "site": {
     "title": "Keramiek – Jeugdkoor Westmalle | Malle | België",
-    "description": "Keramiek is een dynamisch jeugdkoor uit Westmalle (Malle), België. Leeftijd 12–27 jaar. Elke vrijdag repetitie van 19:30 tot 21:30 in CC Westmalle."
+    "description": "Keramiek is een dynamisch jeugdkoor uit Westmalle (Malle), België. Leeftijd 12–27 jaar. Elke vrijdag repetitie van 19:30 tot 21:30 in GC Westmalle."
   },
-  "hero": {
-    "eyebrow": "Jeugdkoor · Westmalle · Malle · België",
-    "title": "Wij zijn<br><span style=\"display:inline-block\">Keramiek</span><span class=\"accent\">.</span>",
-    "description": "Een tof en dynamisch jeugdkoor uit Malle. Van pop en rock tot musical, wij zingen het allemaal met passie en plezier. Elke vrijdag, 19:30–21:30.",
-    "image": "https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/10012681-10153995843414447-8998163628748521382-o-small_orig.jpg",
-    "primaryButton": "Bekijk foto's →",
-    "secondaryButton": "Word lid"
-  },
-  "stats": [
+  "agenda": [
     {
-      "number": "12–27",
-      "label": "Leeftijdscategorie"
+      "day": "06",
+      "month": "Jun",
+      "title": "Wekelijkse repetitie",
+      "text": "📍 CC Westmalle, Sint-Jozeflei 26, 19:30 tot 21:30",
+      "badge": "Repetitie",
+      "badgeClass": "b-rep"
     },
     {
-      "number": "15+",
-      "label": "Jaar actief"
+      "day": "20",
+      "month": "Jun",
+      "title": "Eindactiviteit seizoen 2025–2026",
+      "text": "📍 Locatie volgt, activiteit voor alle leden van Keramiek",
+      "badge": "Activiteit",
+      "badgeClass": "b-act"
     },
     {
-      "number": "Vrijdag",
-      "label": "Vaste repetitiedag"
-    },
-    {
-      "number": "19:30",
-      "label": "Start repetitie"
+      "day": "Sep",
+      "month": "2026",
+      "title": "Start nieuw seizoen 2026–2027",
+      "text": "📍 CC Westmalle, nieuwe leden van harte welkom bij Keramiek!",
+      "badge": "Nieuw seizoen",
+      "badgeClass": "b-new"
     }
   ],
   "about": {
@@ -61,49 +92,6 @@
       "<strong>Musicalconcerten</strong> zoals The Sound of Musical (2026)"
     ]
   },
-  "quote": {
-    "text": "Music has the power to bring people together like no other art can.",
-    "cite": "Het motto van Jeugdkoor Keramiek"
-  },
-  "feature1": {
-    "title": "The Sound of Musical 2026",
-    "text": "Op 1 maart gaven wij een onvergetelijk musicalconcert in CC Westmalle. De grootste hits, de mooiste stemmen, een avond om nooit te vergeten.",
-    "image": "https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/definitieve-poster-keramiek-musicalconcert-orig_orig.jpeg",
-    "button": "Bekijk de sfeerbeelden →"
-  },
-  "feature2": {
-    "title": "Word lid van Keramiek.",
-    "text": "Ben je tussen 12 en 27 jaar en hou je van zingen? Kom vrijdagavond langs en proef de sfeer. Geen audities, gewoon passie voor muziek is genoeg!",
-    "image": "https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/11537328-10153995843474447-161549899097507805-o-small_orig.jpg",
-    "button": "Neem contact op →"
-  },
-  "newsTitle": "Recentste nieuws",
-  "news": [
-    {
-      "tag": "Concert · 2026",
-      "title": "The Sound of Musical",
-      "text": "Een onvergetelijke avond vol muziek en ambiance in CC Westmalle op 1 maart 2026. Prachtige stemmen, fantastische nummers.",
-      "image": "https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/definitieve-poster-keramiek-musicalconcert-orig_orig.jpeg"
-    },
-    {
-      "tag": "Optreden",
-      "title": "Rock-on: energie en passie",
-      "text": "Keramiek op zijn best: rock en pop nummers met volle inzet en een enthousiast publiek.",
-      "image": "https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/rock-on-46-small_orig.jpg"
-    },
-    {
-      "tag": "Nieuw seizoen",
-      "title": "Seizoen 2026–2027 start in september",
-      "text": "Schrijf je nu in of kom een keer proberen. Iedereen van 12 tot 27 jaar is welkom bij Jeugdkoor Keramiek!",
-      "image": ""
-    }
-  ],
-  "video": {
-    "title": "Bekijk ons in actie",
-    "text": "Wil je weten hoe Keramiek klinkt? Bekijk onze video hieronder of bezoek ons YouTube-kanaal.",
-    "youtube": "https://www.youtube.com/embed/OMMGjd7bnNI"
-  },
-  "galleryIntro": "Sfeerbeelden van onze repetities, optredens en activiteiten. Voeg nieuwe foto's toe via het admin paneel.",
   "gallery": [
     {
       "category": "optreden",
@@ -126,56 +114,27 @@
       "image": "https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/p1090415-small_orig.jpg"
     }
   ],
-  "agendaIntro": "Aankomende evenementen, repetities en activiteiten van Jeugdkoor Keramiek.",
-  "agenda": [
-    {
-      "day": "06",
-      "month": "Jun",
-      "title": "Wekelijkse repetitie",
-      "text": "📍 CC Westmalle, Sint-Jozeflei 26, 19:30 tot 21:30",
-      "badge": "Repetitie",
-      "badgeClass": "b-rep"
-    },
-    {
-      "day": "20",
-      "month": "Jun",
-      "title": "Eindactiviteit seizoen 2025–2026",
-      "text": "📍 Locatie volgt, activiteit voor alle leden van Keramiek",
-      "badge": "Activiteit",
-      "badgeClass": "b-act"
-    },
-    {
-      "day": "Sep",
-      "month": "2026",
-      "title": "Start nieuw seizoen 2026–2027",
-      "text": "📍 CC Westmalle, nieuwe leden van harte welkom bij Keramiek!",
-      "badge": "Nieuw seizoen",
-      "badgeClass": "b-new"
-    }
-  ],
-  "fixedRepetition": "Elke <strong>vrijdag van 19:30 tot 21:30</strong> in het Cultureel Centrum van Westmalle (Sint-Jozeflei 26, 2390 Westmalle). Iedereen tussen 12 en 27 jaar is welkom om eens langs te komen proberen!",
-  "boardIntro": "Maak kennis met de mensen die Jeugdkoor Keramiek draaiende houden.",
-  "board": [
-    {
-      "initials": "LC",
-      "name": "Laurens Corluy",
-      "role": "Dirigent",
-      "bio": "Leidt Keramiek met passie en vakmanschap. Zorgt voor de muzikale richting en de cohesie van het koor."
-    },
-    {
-      "initials": "WV",
-      "name": "Wim Vanderstraeten",
-      "role": "Pianist",
-      "bio": "Begeleidt het koor aan de piano bij elke repetitie en elk optreden."
-    },
-    {
-      "initials": "V",
-      "name": "Naam voorzitter",
-      "role": "Voorzitter",
-      "bio": "Voorzit het bestuur en bewaakt de algemene werking van de vereniging."
-    }
-  ],
   "membersIntro": "Onze fantastische zangers en zangeressen: het kloppende hart van Keramiek.",
+  "news": [
+    {
+      "tag": "Concert · 2026",
+      "title": "The Sound of Musical",
+      "text": "Een onvergetelijke avond vol muziek en ambiance in CC Westmalle op 1 maart 2026. Prachtige stemmen, fantastische nummers.",
+      "image": "https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/definitieve-poster-keramiek-musicalconcert-orig_orig.jpeg"
+    },
+    {
+      "tag": "Optreden",
+      "title": "Rock-on: energie en passie",
+      "text": "Keramiek op zijn best: rock en pop nummers met volle inzet en een enthousiast publiek.",
+      "image": "https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/rock-on-46-small_orig.jpg"
+    },
+    {
+      "tag": "Nieuw seizoen",
+      "title": "Seizoen 2026–2027 start in september",
+      "text": "Schrijf je nu in of kom een keer proberen. Iedereen van 12 tot 27 jaar is welkom bij Jeugdkoor Keramiek!",
+      "image": ""
+    }
+  ],
   "members": [
     {
       "initials": "S1",
@@ -202,12 +161,53 @@
       "voiceLabel": "Bas"
     }
   ],
-  "contact": {
-    "intro": "Vragen, inschrijvingen of gewoon eens langskomen? Neem gerust contact op!",
-    "address": "Cultureel Centrum Westmalle<br>Sint-Jozeflei 26<br>2390 Westmalle (Malle)",
-    "email": "info@keramiekwestmalle.be",
-    "repetitions": "Elke vrijdag · 19:30 tot 21:30",
-    "age": "12 tot 27 jaar"
+  "galleryIntro": "Sfeerbeelden van onze repetities, optredens en activiteiten. Voeg nieuwe foto's toe via het admin paneel.",
+  "hero": {
+    "eyebrow": "Jeugdkoor · Westmalle · Malle · België",
+    "title": "Wij zijn<br><span style=\"display:inline-block\">Keramiek</span><span class=\"accent\">.</span>",
+    "description": "Een tof en dynamisch jeugdkoor uit Malle. Van pop en rock tot musical, wij zingen het allemaal met passie en plezier. Elke vrijdag, 19:30–21:30.",
+    "image": "https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/10012681-10153995843414447-8998163628748521382-o-small_orig.jpg",
+    "primaryButton": "Bekijk foto's →",
+    "secondaryButton": "Word lid"
   },
-  "footer": "© 2026 Jeugdkoor Keramiek Westmalle. Alle rechten voorbehouden."
+  "video": {
+    "title": "Bekijk ons in actie",
+    "text": "Wil je weten hoe Keramiek klinkt? Bekijk onze video hieronder of bezoek ons YouTube-kanaal.",
+    "youtube": "https://www.youtube.com/embed/OMMGjd7bnNI"
+  },
+  "footer": "© 2026 Jeugdkoor Keramiek Westmalle. Alle rechten voorbehouden.",
+  "feature1": {
+    "title": "The Sound of Musical 2026",
+    "text": "Op 1 maart gaven wij een onvergetelijk musicalconcert in CC Westmalle. De grootste hits, de mooiste stemmen, een avond om nooit te vergeten.",
+    "image": "https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/definitieve-poster-keramiek-musicalconcert-orig_orig.jpeg",
+    "button": "Bekijk de sfeerbeelden →"
+  },
+  "quote": {
+    "text": "Music has the power to bring people together like no other art can.",
+    "cite": "Het motto van Jeugdkoor Keramiek"
+  },
+  "feature2": {
+    "title": "Word lid van Keramiek.",
+    "text": "Ben je tussen 12 en 27 jaar en hou je van zingen? Kom vrijdagavond langs en proef de sfeer. Geen audities, gewoon passie voor muziek is genoeg!",
+    "image": "https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/11537328-10153995843474447-161549899097507805-o-small_orig.jpg",
+    "button": "Neem contact op →"
+  },
+  "stats": [
+    {
+      "number": "12–27",
+      "label": "Leeftijdscategorie"
+    },
+    {
+      "number": "15+",
+      "label": "Jaar actief"
+    },
+    {
+      "number": "Vrijdag",
+      "label": "Vaste repetitiedag"
+    },
+    {
+      "number": "19:30",
+      "label": "Start repetitie"
+    }
+  ]
 }
