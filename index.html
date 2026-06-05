@@ -465,12 +465,6 @@ footer{background:var(--dark);color:var(--white);padding:60px 2.5rem 30px}
     </div>
   </section>
 
-  <!-- QUOTE BAND -->
-  <div class="quote-band" role="complementary">
-    <blockquote contenteditable="true">"Music has the power to bring people together like no other art can."</blockquote>
-    <cite contenteditable="true">— Het motto van Jeugdkoor Keramiek</cite>
-  </div>
-
   <!-- FULLBLEED 1 -->
   <div class="fullbleed">
     <div class="fb-bg" id="fb1" style="background-image:url('https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/definitieve-poster-keramiek-musicalconcert-orig_orig.jpeg')"></div>
@@ -545,14 +539,6 @@ footer{background:var(--dark);color:var(--white);padding:60px 2.5rem 30px}
     <button class="fbtn" onclick="filterGal('optreden',this)">Optredens</button>
     <button class="fbtn" onclick="filterGal('repetitie',this)">Repetities</button>
     <button class="fbtn" onclick="filterGal('activiteit',this)">Activiteiten</button>
-  </div>
-
-  <!-- UPLOAD AREA -->
-  <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()" ondragover="e=>e.preventDefault()" ondrop="handleDrop(event)">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-    <p><strong>Klik hier</strong> of sleep foto's hiernaartoe om toe te voegen</p>
-    <p style="font-size:.78rem;margin-top:.3rem;color:#aaa">JPEG, PNG, WebP ondersteund</p>
-    <input type="file" id="fileInput" accept="image/*" multiple onchange="handleFiles(this.files)">
   </div>
 
   <div class="masonry" id="masonry">
