@@ -4,37 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Keramiek – Jeugdkoor Westmalle | België</title>
-<meta name="description" content="Keramiek is een dynamisch jeugdkoor uit Westmalle.">
+<title>Keramiek – Jeugdkoor Westmalle</title>
+
+<meta name="description" content="Jeugdkoor Keramiek uit Westmalle">
 <meta name="robots" content="index, follow">
 
 <meta property="og:title" content="Keramiek – Jeugdkoor Westmalle">
 <meta property="og:image" content="https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/groepsfoto-normaal-met-logo-2-small_orig.jpg">
 
-<!-- FIXED -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Keramiek – Jeugdkoor Westmalle">
+<meta name="twitter:title" content="Keramiek – Westmalle">
 <meta name="twitter:image" content="https://keramiekwestmalle.weebly.com/uploads/1/0/0/5/100504252/groepsfoto-normaal-met-logo-2-small_orig.jpg">
 
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Inter;background:#fff;cursor:none}
+body{margin:0;font-family:Inter;cursor:none;background:#fff}
 #cur{position:fixed;width:10px;height:10px;background:#C0392B;border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%)}
 
-/* removed second cursor */
-
 nav{position:fixed;top:0;left:0;right:0;height:70px;background:#fff;border-bottom:2px solid #C0392B;z-index:1000}
+
 .page{display:none;padding-top:70px}
 .page.active{display:block}
 
 .hero-bg-img{position:absolute;inset:0;background-size:cover;background-position:center}
-.hero-overlay{position:absolute;inset:0;background:rgba(192,57,43,.6)}
+.hero-overlay{position:absolute;inset:0;background:rgba(192,57,43,.55)}
 
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;padding:80px}
 
+.btn-red{background:#C0392B;color:#fff;padding:10px 20px;border:none;text-decoration:none}
 .btn-white{background:#fff;padding:10px 20px;text-decoration:none}
-.btn-red{background:#C0392B;color:#fff;padding:10px 20px;border:none}
 </style>
 </head>
 
@@ -42,59 +41,45 @@ nav{position:fixed;top:0;left:0;right:0;height:70px;background:#fff;border-botto
 
 <div id="cur"></div>
 
-<!-- LOCK SCREEN -->
-<div id="lockScreen" style="position:fixed;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:999999">
-  <h2>Leden toegang</h2>
-  <input type="password" id="pwd" placeholder="Wachtwoord">
-  <button onclick="checkPwd()">Enter</button>
-</div>
-
 <nav></nav>
 
+<!-- HOME -->
 <main class="page active" id="page-home">
 
-<!-- HERO -->
 <section style="height:90vh;position:relative">
   <div class="hero-bg-img" style="background-image:url('https://raw.githubusercontent.com/IsalineVT/keramiek.website/main/IMG_0924%202.jpg')"></div>
   <div class="hero-overlay"></div>
 </section>
 
-<!-- MARQUEE -->
 <div style="background:#C0392B;color:#fff;padding:10px">Keramiek · Westmalle · 12-27 jaar</div>
 
 <!-- ABOUT -->
 <section class="about-grid">
 
-<!-- VIDEO REEL -->
+<!-- INSTAGRAM REEL -->
 <div>
 <blockquote class="instagram-media"
  data-instgrm-permalink="https://www.instagram.com/reel/DZDEgxDsWNx/"
- data-instgrm-version="14"
- style="width:100%">
-</blockquote>
+ data-instgrm-version="14"></blockquote>
 </div>
 
 <div>
 <h2>Wie zijn wij?</h2>
-<p>Wij zijn Keramiek, een jeugdkoor uit Malle...</p>
+<p>Wij zijn Keramiek, een dynamisch jeugdkoor uit Malle...</p>
 <a class="btn-white" href="#">Word lid</a>
 </div>
 
 </section>
 
-<!-- FULLBLEED POSTER (Instagram vervangen) -->
+<!-- MUSICAL POSTER -->
 <section>
-
 <blockquote class="instagram-media"
  data-instgrm-permalink="https://www.instagram.com/p/DSmpgJOjEO_/"
- data-instgrm-version="14">
-</blockquote>
-
+ data-instgrm-version="14"></blockquote>
 </section>
 
-<!-- NEWS IMAGES -->
+<!-- EXTRA POSTS -->
 <section>
-
 <blockquote class="instagram-media"
  data-instgrm-permalink="https://www.instagram.com/p/DX7lQdmjISo/"
  data-instgrm-version="14"></blockquote>
@@ -102,42 +87,63 @@ nav{position:fixed;top:0;left:0;right:0;height:70px;background:#fff;border-botto
 <blockquote class="instagram-media"
  data-instgrm-permalink="https://www.instagram.com/p/DTsSg-GjHDW/"
  data-instgrm-version="14"></blockquote>
-
 </section>
 
-<!-- AGENDA + GOOGLE CALENDAR -->
-<section>
-<h2>Agenda</h2>
+</main>
+
+<!-- AGENDA -->
+<main class="page" id="page-agenda">
+
+<h1 style="padding:2rem">Agenda</h1>
 
 <iframe 
 src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Europe%2FBrussels"
 width="100%" height="600"></iframe>
 
-</section>
+</main>
 
 <!-- BESTUUR -->
-<section>
-<h2>Bestuur</h2>
+<main class="page" id="page-bestuur">
 
-<p><b>Isaline Van Tornhaut</b> – Voorzitter & Communicatie</p>
-<p><b>Mirte Steyaert</b> – Vice-voorzitter & ledenverantwoordelijke</p>
-<p><b>Daan Froyen</b> – Penningmeester</p>
-<p><b>Charlotte Dela Montagne</b> – Zaalverantwoordelijke</p>
-<p><b>Anthe Daniëls</b> – Sociale media & Secretaris</p>
+<h1 style="padding:2rem">Bestuur</h1>
 
-</section>
+<p>Isaline Van Tornhaut – Voorzitter & Communicatie</p>
+<p>Mirte Steyaert – Vice-voorzitter & ledenverantwoordelijke</p>
+<p>Daan Froyen – Penningmeester</p>
+<p>Charlotte Dela Montagne – Zaalverantwoordelijke</p>
+<p>Anthe Daniëls – Sociale media & Secretaris</p>
 
-<!-- LEDEN -->
-<section>
-<h2>Leden (beveiligd)</h2>
-<p>Deze pagina is enkel toegankelijk via wachtwoord.</p>
-</section>
+</main>
+
+<!-- LEDEN (BEVEILIGD) -->
+<main class="page" id="page-leden">
+
+<div id="ledenLock" style="
+position:absolute;inset:0;background:white;
+display:flex;flex-direction:column;
+align-items:center;justify-content:center;z-index:9999">
+
+<h2>🔐 Leden toegang</h2>
+
+<input type="password" id="ledenPwd" placeholder="Wachtwoord" style="padding:10px">
+
+<button class="btn-red" onclick="checkPwd()">Toegang</button>
+
+<p id="error" style="color:red;display:none">Fout wachtwoord</p>
+
+</div>
+
+<div id="ledenContent" style="display:none;padding:2rem">
+<h1>Leden</h1>
+<p>Partituren en documenten komen hier.</p>
+</div>
 
 </main>
 
 <script async src="//www.instagram.com/embed.js"></script>
 
 <script>
+
 /* CURSOR */
 document.addEventListener('mousemove',e=>{
   const c=document.getElementById('cur');
@@ -145,12 +151,17 @@ document.addEventListener('mousemove',e=>{
   c.style.top=e.clientY+'px';
 });
 
-/* LOCK */
+/* LEDEN LOGIN */
 function checkPwd(){
-  if(document.getElementById('pwd').value==="keramiek2026"){
-    document.getElementById('lockScreen').style.display="none";
-  } else alert("Fout wachtwoord");
+  const p=document.getElementById("ledenPwd").value;
+  if(p==="Keramiek2390!"){
+    document.getElementById("ledenLock").style.display="none";
+    document.getElementById("ledenContent").style.display="block";
+  } else {
+    document.getElementById("error").style.display="block";
+  }
 }
+
 </script>
 
 </body>
