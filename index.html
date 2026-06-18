@@ -216,6 +216,11 @@ nav.scrolled{box-shadow:0 4px 24px rgba(192,57,43,.1)}
 .drive-box h3{font-family:'Syne',sans-serif;color:var(--red-dark);font-size:1.1rem;margin-bottom:.5rem}
 .drive-box p{font-size:.92rem;color:var(--gray);line-height:1.7}
 .drive-box a{color:var(--red-dark);font-weight:700}
+.drive-embed{margin-top:1.5rem;border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--white);box-shadow:0 12px 40px rgba(192,57,43,.08)}
+.drive-embed iframe{width:100%;height:680px;border:0;display:block}
+.drive-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem}
+.drive-btn{display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:var(--white)!important;text-decoration:none;border-radius:4px;padding:11px 18px;font-family:'Syne',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+.drive-btn:hover{background:var(--red-dark)}
 
 .voice-bar{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2rem}
 .vb{background:var(--white);border:1.5px solid var(--border);color:var(--gray);padding:7px 18px;border-radius:3px;font-family:'Syne',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;cursor:none;transition:all .2s}
@@ -293,6 +298,7 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
   .calendar-top{display:block}
   .calendar-top p{text-align:left;margin-top:.75rem;max-width:none}
   .agenda-card iframe{height:640px}
+  .drive-embed iframe{height:560px}
 }
 @media(max-width:500px){
   .ft-grid{grid-template-columns:1fr}
@@ -388,8 +394,8 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
           <span class="sec-tag">Over ons</span>
           <div class="red-rule"></div>
           <h2 class="sec-title" id="about-h">Wie zijn wij?</h2>
-          <p class="sec-sub">Wij zijn Jeugdkoor Keramiek, een tof en dynamisch koor uit Malle dat graag van zich laat horen. Onder begeleiding van dirigent <strong>Laurens Corluy</strong> en pianist <strong>Wim Vanderstraeten</strong> zingen we liedjes uit diverse genres zoals pop, rock, musical en meer.</p>
-          <p style="font-size:.93rem;color:var(--gray);line-height:1.8;margin-bottom:1.5rem">Ben je tussen de 12 en 27 jaar en hou je van zingen? Kom eens langs op een repetitie of neem contact op. Wij verwelkomen jou graag!</p>
+          <p class="sec-sub">Wij zijn Jeugdkoor Keramiek, een enthousiaste groep jonge zangers uit Malle. Onder begeleiding van dirigent <strong>Laurens Corluy</strong> en pianist <strong>Wim Vanderstraeten</strong> brengen we een gevarieerd repertoire van pop, rock en musical. Samen werken we aan muzikale kwaliteit, podiumervaring en vooral veel zangplezier.</p>
+          <p style="font-size:.93rem;color:var(--gray);line-height:1.8;margin-bottom:1.5rem">Ben je tussen 12 en 27 jaar en zing je graag? Kom gerust eens vrijblijvend kennismaken tijdens een repetitie. Je hoeft geen auditie te doen, enthousiasme en zin om samen muziek te maken zijn voldoende. Voor leerlingen van de muziekschool kan Keramiek ook gebruikt worden als alternatieve leercontext of livetraject, ter vervanging van samenzang. We verwelkomen nieuwe leden altijd met open armen!</p>
           <div class="info-boxes">
             <div class="ib"><div class="ibl">Wanneer</div><div class="ibv">Elke vrijdag<br>19:30 tot 21:30</div></div>
             <div class="ib"><div class="ibl">Waar</div><div class="ibv">GC Westmalle<br>Sint-Jozeflei 26</div></div>
@@ -510,7 +516,6 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
       <div class="calendar-shell rev">
         <div class="calendar-top">
           <div>
-            <span class="calendar-kicker">Live kalender</span>
             <h3>Keramiek agenda</h3>
           </div>
           <p>Maandoverzicht, automatisch gesynchroniseerd met Google Agenda.</p>
@@ -573,9 +578,15 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
       <div class="red-rule"></div>
       <h2 class="sec-title">Partituren en ledeninfo</h2>
       <div class="drive-box">
-        <h3>Google Drive partituren</h3>
-        <p>Hier vind je de Google Drive map met partituren en ledenmateriaal. Deel de map best enkel met leden via hun e-mailadres.</p>
-        <p><a href="https://drive.google.com/drive/folders/1KVBeYURKfmJhEoGrZrjinVhGlVYC3mdH?lfhs=2" target="_blank" rel="noopener">Open Google Drive map met partituren</a></p>
+        <h3>Partituren en ledenbestanden</h3>
+        <p>Hieronder staan de bestanden uit de Google Drive map van Keramiek. Nieuwe of aangepaste bestanden in Drive verschijnen automatisch mee op deze ledenpagina.</p>
+        <div class="drive-actions">
+          <a class="drive-btn" href="https://drive.google.com/drive/folders/1KVBeYURKfmJhEoGrZrjinVhGlVYC3mdH?lfhs=2" target="_blank" rel="noopener">Open in Google Drive</a>
+        </div>
+      </div>
+
+      <div class="drive-embed">
+        <iframe src="https://drive.google.com/embeddedfolderview?id=1KVBeYURKfmJhEoGrZrjinVhGlVYC3mdH#grid" title="Google Drive bestanden Keramiek"></iframe>
       </div>
 
       <div class="voice-bar">
