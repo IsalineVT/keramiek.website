@@ -256,6 +256,7 @@ nav.scrolled{box-shadow:0 4px 24px rgba(192,57,43,.1)}
 .btn-red:hover{background:var(--red-dark)}
 .succ{display:none;padding:12px 16px;background:var(--red-pale);border:1px solid var(--red-light);border-radius:4px;color:var(--red-dark);font-size:.88rem;font-weight:600;margin-top:1rem;font-family:'Syne',sans-serif}
 .form-note{font-size:.78rem;color:var(--gray);line-height:1.6;margin-top:.9rem;text-align:center}
+.succ.err{background:#fff5f5;border-color:#f1b5b5;color:#922B21}
 
 footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
 .ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3.5rem;max-width:1200px;margin-left:auto;margin-right:auto}
@@ -641,7 +642,7 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
       <div class="form-wrap rev">
         <h2>Stuur een bericht</h2>
         <p class="hint">We antwoorden zo snel mogelijk op je bericht.</p>
-        <form name="contact-keramiek" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/bedankt.html">
+        <form name="contact-keramiek" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitNetlifyForm(event)">
           <input type="hidden" name="form-name" value="contact-keramiek">
           <p style="display:none">
             <label>Laat dit veld leeg: <input name="bot-field"></label>
@@ -675,6 +676,8 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
 
           <button type="submit" class="btn-red">Verstuur bericht →</button>
           <p class="form-note">Je bericht wordt rechtstreeks via Netlify Forms naar Keramiek doorgestuurd.</p>
+          <div class="succ" id="formSuccess">✓ Bedankt! Je bericht werd verzonden.</div>
+          <div class="succ err" id="formError">Er ging iets mis. Probeer het opnieuw of mail naar keramiekmalle@gmail.com.</div>
         </form>
       </div>
     </div>
@@ -785,6 +788,46 @@ function unlockLeden(){
   }
 }
 
+
+function encodeFormData(data){
+  return new URLSearchParams(data).toString();
+}
+
+function submitNetlifyForm(e){
+  e.preventDefault();
+
+  const form = e.target;
+  const success = document.getElementById('formSuccess');
+  const error = document.getElementById('formError');
+  const button = form.querySelector('button[type="submit"]');
+
+  if(success) success.style.display = 'none';
+  if(error) error.style.display = 'none';
+  if(button){
+    button.disabled = true;
+    button.textContent = 'Versturen...';
+  }
+
+  fetch('/', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+    body: encodeFormData(new FormData(form))
+  })
+  .then(response => {
+    if(!response.ok) throw new Error('Netlify form submission failed');
+    form.reset();
+    if(success) success.style.display = 'block';
+  })
+  .catch(() => {
+    if(error) error.style.display = 'block';
+  })
+  .finally(() => {
+    if(button){
+      button.disabled = false;
+      button.textContent = 'Verstuur bericht →';
+    }
+  });
+}
 
 function revealNow(){
   document.querySelectorAll('.rev').forEach(el => {
