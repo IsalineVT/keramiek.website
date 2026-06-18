@@ -621,7 +621,7 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
     <div class="cl">
       <h2>Laten we <br>praten.</h2>
       <div class="ci rev"><label>Adres</label><p>Cultureel Centrum Westmalle<br>Sint-Jozeflei 26<br>2390 Westmalle</p></div>
-      <div class="ci rev d1"><label>E-mail</label><a href="mailto:info@keramiekwestmalle.be">info@keramiekwestmalle.be</a></div>
+      <div class="ci rev d1"><label>E-mail</label><a href="mailto:keramiekmalle@gmail.com">keramiekmalle@gmail.com</a></div>
       <div class="ci rev d2"><label>Repetities</label><p>Elke vrijdag · 19:30 tot 21:30</p></div>
       <div class="ci rev d3"><label>Leeftijd</label><p>12 tot 27 jaar</p></div>
       <div class="socials rev">
@@ -655,7 +655,7 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
           </div>
           <div class="fg"><label for="f-msg">Bericht</label><textarea id="f-msg" placeholder="Schrijf hier je bericht." required></textarea></div>
           <button type="submit" class="btn-red">Verstuur bericht →</button>
-          <div class="succ" id="succ">✓ Bedankt! We nemen zo snel mogelijk contact met je op.</div>
+          <div class="succ" id="succ">✓ Je e-mailprogramma wordt geopend met een bericht naar Keramiek.</div>
         </form>
       </div>
     </div>
@@ -768,9 +768,25 @@ function unlockLeden(){
 
 function handleForm(e){
   e.preventDefault();
+
+  const naam = document.getElementById('f-naam')?.value || '';
+  const email = document.getElementById('f-email')?.value || '';
+  const onderwerp = document.getElementById('f-sub')?.value || 'Bericht via website';
+  const bericht = document.getElementById('f-msg')?.value || '';
+
+  const body =
+    'Naam: ' + naam + '\\n' +
+    'E-mail: ' + email + '\\n\\n' +
+    'Bericht:\\n' + bericht;
+
+  window.location.href =
+    'mailto:keramiekmalle@gmail.com?subject=' +
+    encodeURIComponent(onderwerp) +
+    '&body=' +
+    encodeURIComponent(body);
+
   const succ = document.getElementById('succ');
   if(succ) succ.style.display = 'block';
-  e.target.reset();
 }
 
 function revealNow(){
