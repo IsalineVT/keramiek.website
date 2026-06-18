@@ -311,6 +311,21 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
 </head>
 
 <body>
+<form name="contact-keramiek" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="contact-keramiek">
+  <input name="naam" type="text">
+  <input name="email" type="email">
+  <select name="onderwerp">
+    <option>Ik wil lid worden</option>
+    <option>Vraag over een optreden</option>
+    <option>Algemene vraag</option>
+    <option>Samenwerking</option>
+  </select>
+  <textarea name="bericht"></textarea>
+  <input name="bot-field">
+</form>
+
+
 <div id="cur"></div>
 <div id="cur2"></div>
 
@@ -642,7 +657,7 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
       <div class="form-wrap rev">
         <h2>Stuur een bericht</h2>
         <p class="hint">We antwoorden zo snel mogelijk op je bericht.</p>
-        <form name="contact-keramiek" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitNetlifyForm(event)">
+        <form name="contact-keramiek" method="POST" onsubmit="submitNetlifyForm(event)">
           <input type="hidden" name="form-name" value="contact-keramiek">
           <p style="display:none">
             <label>Laat dit veld leeg: <input name="bot-field"></label>
@@ -789,6 +804,7 @@ function unlockLeden(){
 }
 
 
+
 function encodeFormData(data){
   return new URLSearchParams(data).toString();
 }
@@ -803,18 +819,22 @@ function submitNetlifyForm(e){
 
   if(success) success.style.display = 'none';
   if(error) error.style.display = 'none';
+
   if(button){
     button.disabled = true;
     button.textContent = 'Versturen...';
   }
 
-  fetch('/', {
+  const formData = new FormData(form);
+  formData.set('form-name', 'contact-keramiek');
+
+  fetch(window.location.pathname || '/', {
     method: 'POST',
     headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-    body: encodeFormData(new FormData(form))
+    body: encodeFormData(formData)
   })
   .then(response => {
-    if(!response.ok) throw new Error('Netlify form submission failed');
+    if(!response.ok) throw new Error('Netlify form submission failed: ' + response.status);
     form.reset();
     if(success) success.style.display = 'block';
   })
