@@ -255,6 +255,7 @@ nav.scrolled{box-shadow:0 4px 24px rgba(192,57,43,.1)}
 .btn-red{background:var(--red);color:var(--white);border:none;padding:13px 28px;border-radius:4px;font-family:'Syne',sans-serif;font-weight:700;font-size:.82rem;letter-spacing:1.5px;text-transform:uppercase;cursor:none;transition:background .2s;width:100%}
 .btn-red:hover{background:var(--red-dark)}
 .succ{display:none;padding:12px 16px;background:var(--red-pale);border:1px solid var(--red-light);border-radius:4px;color:var(--red-dark);font-size:.88rem;font-weight:600;margin-top:1rem;font-family:'Syne',sans-serif}
+.form-note{font-size:.78rem;color:var(--gray);line-height:1.6;margin-top:.9rem;text-align:center}
 
 footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
 .ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3.5rem;max-width:1200px;margin-left:auto;margin-right:auto}
@@ -640,22 +641,40 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
       <div class="form-wrap rev">
         <h2>Stuur een bericht</h2>
         <p class="hint">We antwoorden zo snel mogelijk op je bericht.</p>
-        <form onsubmit="handleForm(event)" novalidate>
+        <form name="contact-keramiek" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/bedankt.html">
+          <input type="hidden" name="form-name" value="contact-keramiek">
+          <p style="display:none">
+            <label>Laat dit veld leeg: <input name="bot-field"></label>
+          </p>
+
           <div class="f-row">
-            <div class="fg"><label for="f-naam">Naam</label><input id="f-naam" type="text" placeholder="Jouw naam" required autocomplete="name"></div>
-            <div class="fg"><label for="f-email">E-mail</label><input id="f-email" type="email" placeholder="jouw@email.be" required autocomplete="email"></div>
+            <div class="fg">
+              <label for="f-naam">Naam</label>
+              <input id="f-naam" name="naam" type="text" placeholder="Jouw naam" required autocomplete="name">
+            </div>
+            <div class="fg">
+              <label for="f-email">E-mail</label>
+              <input id="f-email" name="email" type="email" placeholder="jouw@email.be" required autocomplete="email">
+            </div>
           </div>
-          <div class="fg"><label for="f-sub">Onderwerp</label>
-            <select id="f-sub">
+
+          <div class="fg">
+            <label for="f-sub">Onderwerp</label>
+            <select id="f-sub" name="onderwerp">
               <option>Ik wil lid worden</option>
               <option>Vraag over een optreden</option>
               <option>Algemene vraag</option>
               <option>Samenwerking</option>
             </select>
           </div>
-          <div class="fg"><label for="f-msg">Bericht</label><textarea id="f-msg" placeholder="Schrijf hier je bericht." required></textarea></div>
+
+          <div class="fg">
+            <label for="f-msg">Bericht</label>
+            <textarea id="f-msg" name="bericht" placeholder="Schrijf hier je bericht." required></textarea>
+          </div>
+
           <button type="submit" class="btn-red">Verstuur bericht →</button>
-          <div class="succ" id="succ">✓ Je e-mailprogramma wordt geopend met een bericht naar Keramiek.</div>
+          <p class="form-note">Je bericht wordt rechtstreeks via Netlify Forms naar Keramiek doorgestuurd.</p>
         </form>
       </div>
     </div>
@@ -766,28 +785,6 @@ function unlockLeden(){
   }
 }
 
-function handleForm(e){
-  e.preventDefault();
-
-  const naam = document.getElementById('f-naam')?.value || '';
-  const email = document.getElementById('f-email')?.value || '';
-  const onderwerp = document.getElementById('f-sub')?.value || 'Bericht via website';
-  const bericht = document.getElementById('f-msg')?.value || '';
-
-  const body =
-    'Naam: ' + naam + '\\n' +
-    'E-mail: ' + email + '\\n\\n' +
-    'Bericht:\\n' + bericht;
-
-  window.location.href =
-    'mailto:keramiekmalle@gmail.com?subject=' +
-    encodeURIComponent(onderwerp) +
-    '&body=' +
-    encodeURIComponent(body);
-
-  const succ = document.getElementById('succ');
-  if(succ) succ.style.display = 'block';
-}
 
 function revealNow(){
   document.querySelectorAll('.rev').forEach(el => {
