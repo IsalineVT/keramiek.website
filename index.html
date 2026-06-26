@@ -506,11 +506,11 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
   </div>
 
   <div class="photo-filters">
-      <button class="filter-btn active" data-filter="all">Alle foto's</button>
-      <button class="filter-btn" data-filter="activiteiten">Activiteiten</button>
-      <button class="filter-btn" data-filter="koorweekends">Koorweekends</button>
-      <button class="filter-btn" data-filter="repetities">Repetities</button>
-      <button class="filter-btn" data-filter="optredens">Optredens</button>
+      <button class="filter-btn active" onclick="filterGal('all',this)">Alle foto's</button>
+      <button class="filter-btn" onclick="filterGal('activiteiten',this)">Activiteiten</button>
+      <button class="filter-btn" onclick="filterGal('koorweekends',this)">Koorweekends</button>
+      <button class="filter-btn" onclick="filterGal('repetities',this)">Repetities</button>
+      <button class="filter-btn" onclick="filterGal('optredens',this)">Optredens</button>
     </div>
   <div>
   
@@ -858,10 +858,12 @@ function goPage(page){
 }
 
 function filterGal(cat, btn){
-  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   if(btn) btn.classList.add('active');
-  document.querySelectorAll('#masonry .m-item').forEach(item => {
-    item.style.display = (cat === 'all' || item.dataset.c === cat) ? 'block' : 'none';
+
+  document.querySelectorAll('.photo-card').forEach(card => {
+    const category = card.getAttribute('data-category');
+    card.style.display = (cat === 'all' || category === cat) ? 'block' : 'none';
   });
 }
 
