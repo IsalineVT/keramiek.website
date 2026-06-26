@@ -492,28 +492,136 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
       <h1>Foto's</h1>
       <p>Sfeerbeelden van onze repetities, optredens en activiteiten. De beelden hieronder komen uit Instagram.</p>
     </div>
-  </div>
-  <div class="filter-bar">
-    <button class="fbtn active" onclick="filterGal('all',this)">Alle foto's</button>
-    <button class="fbtn" onclick="filterGal('optreden',this)">Optredens</button>
-    <button class="fbtn" onclick="filterGal('repetitie',this)">Repetities</button>
-    <button class="fbtn" onclick="filterGal('activiteit',this)">Activiteiten</button>
-  </div>
+  <div class="photo-filters">
+      <button class="filter-btn active" data-filter="all">Alle foto's</button>
+      <button class="filter-btn" data-filter="activiteiten">Activiteiten</button>
+      <button class="filter-btn" data-filter="koorweekends">Koorweekends</button>
+      <button class="filter-btn" data-filter="repetities">Repetities</button>
+      <button class="filter-btn" data-filter="optredens">Optredens</button>
+    </div>
 
-  <div class="masonry" id="masonry">
-    <div class="m-item" data-c="optreden">
-      <iframe src="https://www.instagram.com/p/DX7lQdmjISo/embed" title="Instagram foto Keramiek 1" scrolling="no" allowtransparency="true"></iframe>
-      <div class="insta-note">Instagrampost. Deze vervangt de oude Weeblyfoto's.</div>
-    </div>
-    <div class="m-item" data-c="optreden">
-      <iframe src="https://www.instagram.com/p/DTsSg-GjHDW/embed" title="Instagram foto Keramiek 2" scrolling="no" allowtransparency="true"></iframe>
-    </div>
-    <div class="m-item" data-c="optreden">
-      <iframe src="https://www.instagram.com/p/DSmpgJOjEO_/embed" title="The Sound of Musical Instagram post" scrolling="no" allowtransparency="true"></iframe>
-      <div class="insta-note">Deze post vervangt de oude Weeblyposter van het musicalconcert.</div>
+    <div class="photo-grid">
+
+      <div class="photo-card" data-category="activiteiten">
+        <img src="Foto's/Activiteiten I.png" alt="Activiteiten">
+      </div>
+
+      <div class="photo-card" data-category="activiteiten">
+        <img src="Foto's/Activiteiten II.png" alt="Activiteiten">
+      </div>
+
+      <div class="photo-card" data-category="koorweekends">
+        <img src="Foto's/Koorweekend 2023 I.png" alt="Koorweekend 2023">
+      </div>
+
+      <div class="photo-card" data-category="koorweekends">
+        <img src="Foto's/Koorweekend 2023 II.png" alt="Koorweekend 2023">
+      </div>
+
+      <div class="photo-card" data-category="koorweekends">
+        <img src="Foto's/Koorweekend 2023 III.png" alt="Koorweekend 2023">
+      </div>
+
+      <div class="photo-card" data-category="koorweekends">
+        <img src="Foto's/Koorweekend 2025 I.png" alt="Koorweekend 2025">
+      </div>
+
+      <div class="photo-card" data-category="koorweekends">
+        <img src="Foto's/Koorweekend 2026 I.png" alt="Koorweekend 2026">
+      </div>
+
+      <div class="photo-card" data-category="repetities">
+        <img src="Foto's/Repetities I.png" alt="Repetities">
+      </div>
+
+      <div class="photo-card" data-category="optredens">
+        <img src="Foto's/Optredens I.png" alt="Optredens">
+      </div>
+
+      <div class="photo-card" data-category="optredens">
+        <img src="Foto's/Optredens II.png" alt="Optredens">
+      </div>
+
     </div>
   </div>
-</main>
+</section>
+
+<style>
+  .photo-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin: 30px 0;
+  }
+
+  .filter-btn {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    background: #f1f1f1;
+    font-weight: 600;
+  }
+
+  .filter-btn.active,
+  .filter-btn:hover {
+    background: #111;
+    color: white;
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+  }
+
+  .photo-card {
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+
+  .photo-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .photo-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .photo-card.hide {
+    display: none;
+  }
+</style>
+
+<script>
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const photoCards = document.querySelectorAll(".photo-card");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.getAttribute("data-filter");
+
+      photoCards.forEach(card => {
+        const category = card.getAttribute("data-category");
+
+        if (filter === "all" || category === filter) {
+          card.classList.remove("hide");
+        } else {
+          card.classList.add("hide");
+        }
+      });
+    });
+  });
+</script>
 
 <main class="page" id="page-agenda">
   <div class="page-banner">
