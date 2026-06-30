@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Keramiek Jeugdkoor Westmalle | België</title>
-<meta name="description" content="Keramiek is een dynamisch jeugdkoor uit Westmalle. We repeteren elke vrijdag van 19:30 tot 21:30 in GC Alice Forceville, Westmalle.">
+<meta name="description" content="Keramiek is een dynamisch jeugdkoor uit Westmalle. We repeteren elke vrijdag van 19:30 tot 21:30 in GC Westmalle.">
 <meta name="keywords" content="jeugdkoor, koor Westmalle, koor Malle, Keramiek koor, zingen Malle, jongerenkoor Antwerpen, koor 12 27 jaar">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Jeugdkoor Keramiek Westmalle">
@@ -19,7 +19,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://keramiekwestmalle.weebly.com/">
 <meta property="og:title" content="Keramiek Jeugdkoor Westmalle">
-<meta property="og:description" content="Jeugdkoor Keramiek uit Westmalle. Leeftijd 12 tot 27 jaar. Elke vrijdag van 19:30 tot 21:30 in GC Alice Forceville, Westmalle.">
+<meta property="og:description" content="Jeugdkoor Keramiek uit Westmalle. Leeftijd 12 tot 27 jaar. Elke vrijdag van 19:30 tot 21:30 in GC Westmalle.">
 <meta property="og:image" content="https://raw.githubusercontent.com/IsalineVT/keramiek.website/main/IMG_0924%202.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -28,7 +28,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Keramiek Jeugdkoor Westmalle">
-<meta name="twitter:description" content="Dynamisch jeugdkoor uit Malle. Leeftijd 12 tot 27 jaar. Elke vrijdag repetitie in GC Alice Forceville, Westmalle.">
+<meta name="twitter:description" content="Dynamisch jeugdkoor uit Malle. Leeftijd 12 tot 27 jaar. Elke vrijdag repetitie in GC Westmalle.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/IsalineVT/keramiek.website/main/IMG_0924%202.jpg">
 
 <script type="application/ld+json">
@@ -194,17 +194,6 @@ nav.scrolled{box-shadow:0 4px 24px rgba(192,57,43,.1)}
 .m-item iframe{width:100%;height:620px;border:0;display:block}
 .insta-note{padding:1rem;font-size:.85rem;color:var(--gray);line-height:1.6}
 
-.photo-grid{max-width:1200px;margin:0 auto;padding:40px 2.5rem 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;background:var(--off-white);}
-.photo-card{background:transparent;border:none;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(192,57,43,.10);transition:transform .25s ease, box-shadow .25s ease;}
-.photo-card:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(192,57,43,.18);}
-.photo-card img{width:100%;height:280px;object-fit:cover;display:block;transition:transform .35s ease;}
-.photo-card:hover img{transform:scale(1.04);}
-.photo-card.hide{display:none;}
-.photo-filters{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;padding:2rem 2.5rem;background:var(--off-white);border:none;}
-.filter-btn{background:var(--off-white);border:1.5px solid var(--border);color:var(--gray);padding:8px 18px;border-radius:999px;font-family:'Syne',sans-serif;font-size:.72rem;font-weight:700; letter-spacing:1.3px;text-transform:uppercase;cursor:pointer;transition:all .2s}
-.filter-btn.active,
-.filter-btn:hover{background:var(--red);border-color:var(--red);color:var(--white);}
-  
 .calendar-shell{background:rgba(255,255,255,.9);border:1px solid var(--border);border-radius:14px;padding:1rem;box-shadow:0 18px 60px rgba(192,57,43,.10);backdrop-filter:blur(8px)}
 .calendar-top{display:flex;justify-content:space-between;gap:1.5rem;align-items:flex-end;padding:1.2rem 1.3rem 1.4rem;border-bottom:1px solid var(--border);background:linear-gradient(135deg,var(--red-pale),#fff);border-radius:10px 10px 0 0}
 .calendar-kicker{font-size:.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:800}
@@ -318,6 +307,92 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
   .board-grid{grid-template-columns:1fr}
   .about-video{height:520px}
 }
+
+/* EXTRA MOBILE FIXES */
+@media(max-width:768px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  body{font-size:16px;cursor:auto}
+  #cur,#cur2{display:none!important}
+  nav{height:64px;padding:0 1rem}
+  .page{padding-top:64px}
+  .nav-logo img{height:34px}
+  .nav-logo-text .nm{font-size:1rem}
+  .nav-logo-text .sub{font-size:.52rem;letter-spacing:1.2px}
+  .hamburger{display:flex;width:40px;height:40px;align-items:center;justify-content:center}
+  .mob-menu{top:64px}
+  .mob-menu a{padding:15px 1.25rem;font-size:.82rem}
+  .hero{height:auto;min-height:calc(100vh - 64px);padding:0 1.25rem 4rem;align-items:flex-end}
+  .hero-bg-img{inset:0;background-position:center center}
+  .hero-overlay{background:linear-gradient(to top,rgba(146,43,33,.96) 0%,rgba(192,57,43,.72) 46%,rgba(0,0,0,.12) 100%)}
+  .hero-content{padding-top:6rem}
+  .hero-eyebrow{font-size:.58rem;letter-spacing:2px;line-height:1.5;flex-wrap:wrap}
+  .hero-h1{font-size:clamp(2.7rem,17vw,4.2rem);line-height:.98;letter-spacing:-1px}
+  .hero-desc{font-size:.98rem;line-height:1.7;max-width:100%;margin-top:1.4rem;margin-bottom:1.5rem}
+  .hero-btns{flex-direction:column;gap:.7rem}
+  .btn-white,.btn-outline-w{width:100%;justify-content:center;padding:13px 18px}
+  .hero-scroll{display:none}
+  .marquee-item{font-size:.82rem;padding:0 1rem}
+  .stats-bar{grid-template-columns:1fr}
+  .stat-c{border-right:none;border-bottom:1px solid var(--border);padding:1.7rem 1rem}
+  .stat-c:last-child{border-bottom:none}
+  .stat-n{font-size:2rem}
+  .sec{padding:52px 1.15rem}
+  .sec-title{font-size:2rem}
+  .sec-sub{font-size:.95rem;line-height:1.7;margin-bottom:1.8rem}
+  .about-grid{grid-template-columns:1fr;gap:2rem}
+  .about-video{height:560px}
+  .info-boxes{grid-template-columns:1fr}
+  .act-li{padding:.85rem .9rem}
+  .fullbleed{height:auto;min-height:420px;padding:4rem 1rem}
+  .fb-bg{inset:0;background-position:center center}
+  .fb-content h2{font-size:2.25rem}
+  .news-grid{grid-template-columns:1fr;gap:1rem}
+  .nc-img{height:520px}
+  .yt-frame iframe{height:250px}
+  .page-banner{padding:42px 1.15rem 34px}
+  .pb-inner h1{font-size:2.45rem}
+  .pb-inner p{font-size:.95rem;line-height:1.65}
+  .filter-bar{padding:1rem 1.15rem;gap:.45rem}
+  .fbtn,.vb{font-size:.65rem;padding:8px 12px;flex:1 1 auto}
+  .masonry{columns:1;padding:12px 1.15rem 3rem}
+  .m-item iframe{height:560px}
+  .calendar-shell{padding:.6rem;border-radius:12px}
+  .calendar-top{display:block;padding:1rem}
+  .calendar-top h3{font-size:1.35rem}
+  .calendar-top p{text-align:left;margin-top:.6rem;max-width:none;font-size:.82rem}
+  .agenda-card iframe{height:620px}
+  .board-grid{grid-template-columns:1fr;gap:1rem}
+  .bc{min-height:auto;padding:1.35rem}
+  .bc-init{font-size:2rem;margin-bottom:.8rem}
+  .bc h3{font-size:1rem}
+  .bc .role{font-size:.56rem;letter-spacing:1px}
+  .member-secure{padding:1.4rem}
+  .drive-box{padding:1.2rem}
+  .drive-actions{flex-direction:column}
+  .drive-btn{width:100%}
+  .drive-embed iframe{height:520px}
+  .voice-bar{gap:.45rem}
+  .mem-grid{grid-template-columns:repeat(2,1fr);gap:.75rem}
+  .mc{padding:1rem .75rem}
+  .contact-split{grid-template-columns:1fr}
+  .cl{padding:3rem 1.15rem}
+  .cr{padding:3rem 1.15rem}
+  .f-row{grid-template-columns:1fr;gap:0}
+  .fg input,.fg textarea,.fg select{width:100%;font-size:16px}
+  .btn-red{padding:14px 18px}
+  footer{padding:42px 1.15rem 24px}
+  .ft-grid{grid-template-columns:1fr;gap:2rem;margin-bottom:2rem}
+  .ft-bottom{flex-direction:column;gap:.6rem;align-items:flex-start}
+}
+@media(max-width:420px){
+  .hero-h1{font-size:3rem}
+  .hero-desc{font-size:.92rem}
+  .about-video{height:500px}
+  .nc-img,.m-item iframe{height:500px}
+  .agenda-card iframe{height:560px}
+  .mem-grid{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 
@@ -372,7 +447,7 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
 
 <main class="page active" id="page-home">
   <section class="hero" aria-label="Hero sectie">
-    <div class="hero-bg-img" style="background-image:url('https://raw.githubusercontent.com/IsalineVT/keramiek.website/main/IMG_0924 2.jpg')"></div>
+    <div class="hero-bg-img" style="background-image:url('https://raw.githubusercontent.com/IsalineVT/keramiek.website/main/IMG_0927.jpg');background-position:center 38%"></div>
     <div class="hero-overlay"></div>
     <div class="hero-red-bar"></div>
     <div class="hero-content">
@@ -394,13 +469,13 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
       <span class="marquee-item white">Pop · Rock · Musical</span><span class="marquee-item">·</span>
       <span class="marquee-item">Elke Vrijdag 19:30</span><span class="marquee-item">·</span>
       <span class="marquee-item white">12 tot 27 Jaar</span><span class="marquee-item">·</span>
-      <span class="marquee-item">GC Alice Forceville, Westmalle</span><span class="marquee-item">·</span>
+      <span class="marquee-item">GC Westmalle</span><span class="marquee-item">·</span>
       <span class="marquee-item white">Jeugdkoor Keramiek</span><span class="marquee-item">·</span>
       <span class="marquee-item">Westmalle</span><span class="marquee-item">·</span>
       <span class="marquee-item white">Pop · Rock · Musical</span><span class="marquee-item">·</span>
       <span class="marquee-item">Elke Vrijdag 19:30</span><span class="marquee-item">·</span>
       <span class="marquee-item white">12 tot 27 Jaar</span><span class="marquee-item">·</span>
-      <span class="marquee-item">GC Alice Forceville, Westmalle</span><span class="marquee-item">·</span>
+      <span class="marquee-item">GC Westmalle</span><span class="marquee-item">·</span>
     </div>
   </div>
 
@@ -426,12 +501,12 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
           <p style="font-size:.93rem;color:var(--gray);line-height:1.8;margin-bottom:1.5rem">Ben je tussen 12 en 27 jaar en zing je graag? Kom gerust eens vrijblijvend kennismaken tijdens een repetitie. Je hoeft geen auditie te doen, enthousiasme en zin om samen muziek te maken zijn voldoende. Voor leerlingen van de muziekschool kan Keramiek ook gebruikt worden als alternatieve leercontext of livetraject, ter vervanging van samenzang. We verwelkomen nieuwe leden altijd met open armen!</p>
           <div class="info-boxes">
             <div class="ib"><div class="ibl">Wanneer</div><div class="ibv">Elke vrijdag<br>19:30 tot 21:30</div></div>
-            <div class="ib"><div class="ibl">Waar</div><div class="ibv">GC Alice Forceville, Westmalle<br>Sint-Jozeflei 26</div></div>
+            <div class="ib"><div class="ibl">Waar</div><div class="ibv">GC Westmalle<br>Sint-Jozeflei 26</div></div>
             <div class="ib"><div class="ibl">Dirigent</div><div class="ibv">Laurens Corluy</div></div>
             <div class="ib"><div class="ibl">Pianist</div><div class="ibv">Wim Vanderstraeten</div></div>
           </div>
           <div class="act-list">
-            <div class="act-li rev d1"><div class="act-dot"></div><span><strong>Wekelijkse repetities</strong> op vrijdagavond in GC Alice Forceville, Westmalle</span></div>
+            <div class="act-li rev d1"><div class="act-dot"></div><span><strong>Wekelijkse repetities</strong> op vrijdagavond in GC Westmalle</span></div>
             <div class="act-li rev d2"><div class="act-dot"></div><span><strong>Jaarlijkse start en eindactiviteit</strong> elk seizoen</span></div>
             <div class="act-li rev d3"><div class="act-dot"></div><span><strong>Koorweekend</strong> en kerstactiviteit</span></div>
             <div class="act-li rev d4"><div class="act-dot"></div><span><strong>Concerten</strong> met pop, rock, musical en sfeer</span></div>
@@ -474,7 +549,7 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
   </section>
 
   <div class="fullbleed">
-    <div class="fb-bg" style="background-image:url('https://raw.githubusercontent.com/IsalineVT/keramiek.website/main/IMG_0924%202.jpg')"></div>
+    <div class="fb-bg" style="background-image:url('https://raw.githubusercontent.com/IsalineVT/keramiek.website/main/IMG_0927.jpg');background-position:center 38%"></div>
     <div class="fb-overlay"></div>
     <div class="fb-content rev">
       <h2>Word lid van Keramiek.</h2>
@@ -501,101 +576,29 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
     <div class="pb-inner">
       <span class="pb-tag">Galerij</span>
       <h1>Foto's</h1>
-      <p>Sfeerbeelden van onze repetities, optredens en activiteiten.</p>
+      <p>Sfeerbeelden van onze repetities, optredens en activiteiten. De beelden hieronder komen uit Instagram.</p>
     </div>
   </div>
+  <div class="filter-bar">
+    <button class="fbtn active" onclick="filterGal('all',this)">Alle foto's</button>
+    <button class="fbtn" onclick="filterGal('optreden',this)">Optredens</button>
+    <button class="fbtn" onclick="filterGal('repetitie',this)">Repetities</button>
+    <button class="fbtn" onclick="filterGal('activiteit',this)">Activiteiten</button>
+  </div>
 
-  <div class="photo-filters">
-      <button class="filter-btn active" onclick="filterGal('all',this)">Alle foto's</button>
-      <button class="filter-btn" onclick="filterGal('activiteiten',this)">Activiteiten</button>
-      <button class="filter-btn" onclick="filterGal('koorweekends',this)">Koorweekends</button>
-      <button class="filter-btn" onclick="filterGal('repetities',this)">Repetities</button>
-      <button class="filter-btn" onclick="filterGal('optredens',this)">Optredens</button>
+  <div class="masonry" id="masonry">
+    <div class="m-item" data-c="optreden">
+      <iframe src="https://www.instagram.com/p/DX7lQdmjISo/embed" title="Instagram foto Keramiek 1" scrolling="no" allowtransparency="true"></iframe>
+      <div class="insta-note">Instagrampost. Deze vervangt de oude Weeblyfoto's.</div>
     </div>
-  <div>
-  
-    <div class="photo-grid">
-
-      <div class="photo-card" data-category="koorweekends">
-        <img src="Foto's/Koorweekend 2026 I.jpg" alt="Koorweekend 2026">
-      </div>
-      
-      <div class="photo-card" data-category="koorweekends">
-        <img src="Foto's/Koorweekend 2026 II.png" alt="Koorweekend 2026">
-      </div>
-      
-      <div class="photo-card" data-category="koorweekends">
-        <img src="Foto's/Koorweekend 2026 III.png" alt="Koorweekend 2026">
-      </div>
-      
-      <div class="photo-card" data-category="koorweekends">
-        <img src="Foto's/Koorweekend 2026 IV.png" alt="Koorweekend 2026">
-      </div>
-      
-      <div class="photo-card" data-category="koorweekends">
-        <img src="Foto's/Koorweekend 2026 V.png" alt="Koorweekend 2026">
-      </div>
-      
-      <div class="photo-card" data-category="repetities">
-        <img src="Foto's/Repetities I.png" alt="Repetities">
-      </div>
-
-      <div class="photo-card" data-category="optredens">
-        <img src="Foto's/Optredens II.png" alt="Optredens">
-      </div>
-      
-      <div class="photo-card" data-category="koorweekends">
-        <img src="Foto's/Koorweekend 2025 I.png" alt="Koorweekend 2025">
-      </div>
-
-      <div class="photo-card" data-category="koorweekends">
-        <img src="Foto's/Koorweekend 2023 I.png" alt="Koorweekend 2023">
-      </div>
-      
-      <div class="photo-card" data-category="koorweekends">
-        <img src="Foto's/Koorweekend 2023 II.png" alt="Koorweekend 2023">
-      </div>
-      
-      <div class="photo-card" data-category="koorweekends">
-        <img src="Foto's/Koorweekend 2023 III.png" alt="Koorweekend 2023">
-      </div>
-      
-      <div class="photo-card" data-category="koorweekends">
-        <img src="Foto's/Koorweekend 2023 IV.png" alt="Koorweekend 2023">
-      </div>
-      
-      <div class="photo-card" data-category="koorweekends">
-        <img src="Foto's/Koorweekend 2023 V.png" alt="Koorweekend 2023">
-      </div>
-
-       <div class="photo-card" data-category="activiteiten">
-        <img src="Foto's/EMJ Neerpelt I.png" alt="EMJ Neerpelt">
-      </div>
-      
-      <div class="photo-card" data-category="activiteiten">
-        <img src="Foto's/EMJ Neerpelt II.png" alt="EMJ Neerpelt">
-      </div>
-
-      <div class="photo-card" data-category="activiteiten">
-        <img src="Foto's/EMJ Neerpelt III.png" alt="EMJ Neerpelt">
-      </div>
-
-      <div class="photo-card" data-category="activiteiten">
-        <img src="Foto's/EMJ Neerpelt IV.png" alt="EMJ Neerpelt">
-      </div>
-
-       <div class="photo-card" data-category="activiteiten">
-        <img src="Foto's/EMJ Neerpelt VI.png" alt="EMJ Neerpelt">
-      </div>
-
-      <div class="photo-card" data-category="activiteiten">
-        <img src="Foto's/Activiteiten I.png" alt="Eindactiviteit">
-      </div>
-
-      <div class="photo-card" data-category="activiteiten">
-        <img src="Foto's/Activiteiten II.png" alt="Eindactiviteit">
-      </div>
- </div>
+    <div class="m-item" data-c="optreden">
+      <iframe src="https://www.instagram.com/p/DTsSg-GjHDW/embed" title="Instagram foto Keramiek 2" scrolling="no" allowtransparency="true"></iframe>
+    </div>
+    <div class="m-item" data-c="optreden">
+      <iframe src="https://www.instagram.com/p/DSmpgJOjEO_/embed" title="The Sound of Musical Instagram post" scrolling="no" allowtransparency="true"></iframe>
+      <div class="insta-note">Deze post vervangt de oude Weeblyposter van het musicalconcert.</div>
+    </div>
+  </div>
 </main>
 
 <main class="page" id="page-agenda">
@@ -787,7 +790,7 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
     <div>
       <div class="ft-logo">Keramiek</div>
       <div class="ft-tagline">Jeugdkoor · Westmalle · Malle · België</div>
-      <p style="font-size:.82rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:280px">Een dynamisch jeugdkoor uit Malle voor jongeren van 12 tot 27 jaar. Elke vrijdag samen zingen in GC Alice Forceville, Westmalle.</p>
+      <p style="font-size:.82rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:280px">Een dynamisch jeugdkoor uit Malle voor jongeren van 12 tot 27 jaar. Elke vrijdag samen zingen in GC Westmalle.</p>
     </div>
     <div class="ft-col"><h4>Navigatie</h4><ul>
       <li><a href="#" onclick="goPage('home');return false">Home</a></li>
@@ -858,12 +861,10 @@ function goPage(page){
 }
 
 function filterGal(cat, btn){
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
   if(btn) btn.classList.add('active');
-
-  document.querySelectorAll('.photo-card').forEach(card => {
-    const category = card.getAttribute('data-category');
-    card.style.display = (cat === 'all' || category === cat) ? 'block' : 'none';
+  document.querySelectorAll('#masonry .m-item').forEach(item => {
+    item.style.display = (cat === 'all' || item.dataset.c === cat) ? 'block' : 'none';
   });
 }
 
