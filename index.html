@@ -277,55 +277,82 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
 @keyframes marqueeAnim{to{transform:translateX(-50%)}}
 
 @media(max-width:900px){
-  .nav-tabs{
-    display:none !important;
-  }
-
-  .hamburger{
-    display:flex !important;
-  }
-
-  nav{
-    height:64px;
-    padding:0 1rem;
-  }
-
-  .page{
-    padding-top:64px;
-  }
-
-  .mob-menu{
-    top:64px;
-    left:0;
-    right:0;
-    width:100%;
-    max-height:calc(100vh - 64px);
-    overflow-y:auto;
-  }
-
-  .mob-menu.open{
-    display:block !important;
-  }
-
-  .mob-menu a{
-    display:block;
-    padding:15px 1.2rem;
-    font-size:.82rem;
+  .nav-logo img{
+    height:30px !important;
+    width:auto !important;
+    max-width:30px;
+    object-fit:contain;
+    flex-shrink:0;
   }
 
   .nav-logo{
-    max-width:calc(100% - 55px);
-    overflow:hidden;
+    height:64px;
+    align-items:center;
+    gap:8px;
+    max-width:calc(100% - 54px);
   }
 
-  .nav-logo-text{
-    overflow:hidden;
+  .nav-logo-text .nm{
+    font-size:.95rem;
+    line-height:1;
   }
 
   .nav-logo-text .sub{
+    font-size:.48rem;
+    letter-spacing:.8px;
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
+    max-width:170px;
+  }
+
+  .calendar-shell{
+    padding:.6rem;
+    border-radius:10px;
+  }
+
+  .calendar-top{
+    padding:1rem;
+    display:block;
+  }
+
+  .calendar-top h3{
+    font-size:1.2rem;
+  }
+
+  .calendar-top p{
+    font-size:.82rem;
+    text-align:left;
+    margin-top:.5rem;
+  }
+
+  .agenda-card iframe{
+    height:520px;
+  }
+}
+
+@media(max-width:430px){
+  .nav-logo img{
+    height:28px !important;
+    max-width:28px;
+  }
+
+  .nav-logo-text .nm{
+    font-size:.9rem;
+  }
+
+  .nav-logo-text .sub{
+    max-width:135px;
+    font-size:.45rem;
+  }
+
+  .calendar-shell{
+    margin-left:-.4rem;
+    margin-right:-.4rem;
+  }
+
+  .agenda-card iframe{
+    height:500px;
   }
 }
 </style>
