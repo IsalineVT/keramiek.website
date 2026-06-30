@@ -277,34 +277,277 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
 @keyframes marqueeAnim{to{transform:translateX(-50%)}}
 
 @media(max-width:900px){
-  body{cursor:auto}
-  #cur,#cur2{display:none}
-  .nav-tabs{display:none}.hamburger{display:flex}
-  nav{padding:0 1.5rem}
-  .hero{padding:0 1.5rem 4rem}.hero-h1{font-size:3rem;letter-spacing:-1px}
-  .about-grid{grid-template-columns:1fr;gap:2.5rem}
-  .info-boxes{grid-template-columns:1fr 1fr}
-  .stats-bar{grid-template-columns:1fr}.stat-c{padding:2rem 1rem;border-right:none;border-bottom:1px solid var(--border)}
-  .news-grid{grid-template-columns:1fr}
-  .contact-split{grid-template-columns:1fr}.cl{padding:3rem 1.5rem}.cr{padding:3rem 1.5rem}
-  .ft-grid{grid-template-columns:1fr 1fr;gap:2rem}
-  .f-row{grid-template-columns:1fr}
-  .board-grid{grid-template-columns:1fr 1fr}
-  .sec{padding:60px 1.5rem}
-  .page-banner{padding:50px 1.5rem 40px}
-  .photo-grid{grid-template-columns:1fr;padding:30px 1.5rem 60px}
-  .photo-filters{padding:1.5rem}
+  body{
+    cursor:auto;
+  }
+
+  #cur,#cur2{
+    display:none;
+  }
+
+  nav{
+    height:64px;
+    padding:0 1rem;
+  }
+
+  .page{
+    padding-top:64px;
+  }
+
+  .nav-logo{
+    max-width:75%;
+    gap:8px;
+  }
+
+  .nav-logo img{
+    height:34px;
+  }
+
+  .nav-logo-text .nm{
+    font-size:1rem;
+  }
+
+  .nav-logo-text .sub{
+    font-size:.52rem;
+    letter-spacing:1.4px;
+  }
+
+  .nav-tabs{
+    display:none;
+  }
+
+  .hamburger{
+    display:flex;
+    flex-shrink:0;
+    margin-left:auto;
+  }
+
+  .mob-menu{
+    top:64px;
+  }
+
+  .mob-menu a{
+    padding:15px 1.2rem;
+    font-size:.82rem;
+  }
+
+  .hero{
+    min-height:620px;
+    height:auto;
+    padding:0 1.2rem 4rem;
+    align-items:flex-end;
+  }
+
+  .hero-h1{
+    font-size:clamp(2.7rem,14vw,4.2rem);
+    letter-spacing:-1px;
+  }
+
+  .hero-desc{
+    font-size:.95rem;
+    max-width:100%;
+  }
+
+  .hero-btns{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .btn-white,
+  .btn-outline-w{
+    width:100%;
+    justify-content:center;
+  }
+
+  .hero-scroll{
+    display:none;
+  }
+
+  .stats-bar{
+    grid-template-columns:1fr;
+  }
+
+  .stat-c{
+    padding:2rem 1rem;
+    border-right:none;
+    border-bottom:1px solid var(--border);
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:2.5rem;
+  }
+
+  .info-boxes{
+    grid-template-columns:1fr;
+  }
+
+  .news-grid{
+    grid-template-columns:1fr;
+  }
+
+  .nc-img{
+    height:360px;
+  }
+
+  .contact-split{
+    grid-template-columns:1fr;
+  }
+
+  .cl{
+    padding:3rem 1.5rem;
+  }
+
+  .cr{
+    padding:3rem 1.5rem;
+  }
+
+  .ft-grid{
+    grid-template-columns:1fr;
+    gap:2rem;
+  }
+
+  .ft-bottom{
+    flex-direction:column;
+    gap:.6rem;
+    text-align:center;
+  }
+
+  .f-row{
+    grid-template-columns:1fr;
+  }
+
+  .board-grid{
+    grid-template-columns:1fr;
+  }
+
+  .sec{
+    padding:60px 1.2rem;
+  }
+
+  .page-banner{
+    padding:45px 1.2rem 38px;
+  }
+
+  .pb-inner h1{
+    font-size:2.4rem;
+  }
+
+  .pb-inner p{
+    font-size:.94rem;
+  }
+
+  .photo-filters{
+    justify-content:flex-start;
+    padding:1.2rem;
+    gap:.5rem;
+  }
+
+  .filter-btn{
+    font-size:.66rem;
+    padding:8px 13px;
+  }
+
+  .photo-grid{
+    grid-template-columns:1fr;
+    padding:24px 1.2rem 60px;
+    gap:18px;
+  }
+
+  .photo-card img{
+    height:260px;
+  }
+
+  .yt-frame iframe{
+    height:300px;
+  }
 }
+
 @media(max-width:650px){
-  .calendar-top{display:block}
-  .calendar-top p{text-align:left;margin-top:.75rem;max-width:none}
-  .agenda-card iframe{height:640px}
-  .drive-embed iframe{height:560px}
+  .calendar-top{
+    display:block;
+  }
+
+  .calendar-top p{
+    text-align:left;
+    margin-top:.75rem;
+    max-width:none;
+  }
+
+  .agenda-card iframe{
+    height:620px;
+  }
+
+  .drive-embed iframe{
+    height:520px;
+  }
+
+  .fullbleed{
+    min-height:330px;
+    height:auto;
+    padding:4rem 0;
+  }
 }
-@media(max-width:500px){
-  .ft-grid{grid-template-columns:1fr}
-  .board-grid{grid-template-columns:1fr}
-  .about-video{height:520px}
+
+@media(max-width:430px){
+  nav{
+    padding:0 .85rem;
+  }
+
+  .nav-logo-text .nm{
+    font-size:.95rem;
+  }
+
+  .nav-logo-text .sub{
+    font-size:.48rem;
+    letter-spacing:1px;
+  }
+
+  .hero{
+    min-height:580px;
+    padding:0 1rem 3rem;
+  }
+
+  .hero-h1{
+    font-size:2.8rem;
+  }
+
+  .hero-desc{
+    font-size:.9rem;
+  }
+
+  .page-banner{
+    padding:38px 1rem 32px;
+  }
+
+  .sec{
+    padding:50px 1rem;
+  }
+
+  .photo-filters{
+    padding:1rem;
+  }
+
+  .filter-btn{
+    flex:1 1 calc(50% - .5rem);
+    text-align:center;
+  }
+
+  .photo-grid{
+    padding:20px 1rem 50px;
+  }
+
+  .photo-card img{
+    height:230px;
+  }
+
+  .about-video{
+    height:480px;
+  }
+
+  footer{
+    padding:45px 1.2rem 25px;
+  }
 }
 </style>
 </head>
@@ -501,7 +744,7 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
   </div>
 
   <div class="photo-grid">
-    <div class="photo-card" data-category="koorweekends"><img src="Foto's/Koorweekend 2026 I.png" alt="Koorweekend 2026"></div>
+    <div class="photo-card" data-category="koorweekends"><img src="Foto's/Koorweekend 2026 I.jpg" alt="Koorweekend 2026"></div>
     <div class="photo-card" data-category="koorweekends"><img src="Foto's/Koorweekend 2026 II.png" alt="Koorweekend 2026"></div>
     <div class="photo-card" data-category="koorweekends"><img src="Foto's/Koorweekend 2026 III.png" alt="Koorweekend 2026"></div>
     <div class="photo-card" data-category="koorweekends"><img src="Foto's/Koorweekend 2026 IV.png" alt="Koorweekend 2026"></div>
