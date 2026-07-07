@@ -823,7 +823,7 @@ function unlockLeden(){
   const input = document.getElementById('ledenPass');
   const err = document.getElementById('ledenErr');
 
-  if(input && input.value === 'Keramiek2390!'){
+  if(input && input.value === 'Keramiek2390'){
     document.getElementById('leden-lock').style.display = 'none';
     document.getElementById('leden-content').style.display = 'block';
     sessionStorage.setItem('ledenUnlocked','true');
