@@ -114,7 +114,7 @@ nav.scrolled{box-shadow:0 4px 24px rgba(192,57,43,.1)}
 .rev.from-left{transform:translateX(-36px)}
 .rev.from-right{transform:translateX(36px)}
 .rev.in{opacity:1;transform:translate(0)}
-.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
 
 .hero{height:92vh;min-height:580px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:0 2.5rem 5rem;background:var(--white)}
 .hero-bg-img{position:absolute;inset:-10%;background-size:cover;background-position:center;will-change:transform;filter:saturate(.8)}
@@ -587,8 +587,9 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
         <div class="bc rev"><div class="bc-init">IVT</div><h3>Isaline Van Tornhaut</h3><div class="role">Voorzitter & Communicatieverantwoordelijke</div></div>
         <div class="bc rev d1"><div class="bc-init">MS</div><h3>Mirte Steyaert</h3><div class="role">Vicevoorzitter & Ledenverantwoordelijke</div></div>
         <div class="bc rev d2"><div class="bc-init">DF</div><h3>Daan Froyen</h3><div class="role">Penningmeester</div></div>
-        <div class="bc rev d3"><div class="bc-init">CDM</div><h3>Charlotte Dela Montagne</h3><div class="role">Zaalverantwoordelijke</div></div>
-        <div class="bc rev d4"><div class="bc-init">AD</div><h3>Anthe Daniëls</h3><div class="role">Sociale mediaverantwoordelijke & Secretaris</div></div>
+        <div class="bc rev d3"><div class="bc-init">KVDA</div><h3>Klara Van der Auwera</h3><div class="role">Penningmeester en bestuursondersteuning</div></div>
+        <div class="bc rev d4"><div class="bc-init">CDM</div><h3>Charlotte Dela Montagne</h3><div class="role">Zaalverantwoordelijke</div></div>
+        <div class="bc rev d5"><div class="bc-init">AD</div><h3>Anthe Daniëls</h3><div class="role">Sociale mediaverantwoordelijke & Secretaris</div></div>
       </div>
     </div>
   </section>
@@ -629,21 +630,6 @@ footer{background:var(--red-dark);color:var(--white);padding:60px 2.5rem 30px}
       </div>
       <div class="drive-embed">
         <iframe src="https://drive.google.com/embeddedfolderview?id=1KVBeYURKfmJhEoGrZrjinVhGlVYC3mdH#grid" title="Google Drive bestanden Keramiek"></iframe>
-      </div>
-      <div class="voice-bar">
-        <button class="vb active" onclick="filterVoice('all',this)">Alle stemmen</button>
-        <button class="vb" onclick="filterVoice('sopraan',this)">Sopraan</button>
-        <button class="vb" onclick="filterVoice('alt',this)">Alt</button>
-        <button class="vb" onclick="filterVoice('tenor',this)">Tenor</button>
-        <button class="vb" onclick="filterVoice('bas',this)">Bas</button>
-      </div>
-      <div class="mem-grid" id="memGrid">
-        <div class="mc rev" data-v="sopraan"><div class="mc-av">S1</div><h4>Naam lid</h4><p>Sopraan</p></div>
-        <div class="mc rev d1" data-v="sopraan"><div class="mc-av">S2</div><h4>Naam lid</h4><p>Sopraan</p></div>
-        <div class="mc rev d2" data-v="alt"><div class="mc-av">A1</div><h4>Naam lid</h4><p>Alt</p></div>
-        <div class="mc rev d3" data-v="alt"><div class="mc-av">A2</div><h4>Naam lid</h4><p>Alt</p></div>
-        <div class="mc rev" data-v="tenor"><div class="mc-av">T1</div><h4>Naam lid</h4><p>Tenor</p></div>
-        <div class="mc rev d1" data-v="bas"><div class="mc-av">B1</div><h4>Naam lid</h4><p>Bas</p></div>
       </div>
     </div>
   </section>
@@ -823,7 +809,7 @@ function unlockLeden(){
   const input = document.getElementById('ledenPass');
   const err = document.getElementById('ledenErr');
 
-  if(input && input.value === 'Keramiek2390'){
+  if(input && input.value === 'Keramiekmalle2390'){
     document.getElementById('leden-lock').style.display = 'none';
     document.getElementById('leden-content').style.display = 'block';
     sessionStorage.setItem('ledenUnlocked','true');
